@@ -37,14 +37,14 @@ cd ..
 make
 ```
 
-This creates `clownsec-movie-player.elf` in the main directory.
+This creates `clownsec-movie-player.elf` in the `binaries/` directory.
 
 ### Step 2: Create the CIA
 
 ```bash
 # From the main project directory
-./makerom -f cia -o clownsec-movie-player.cia \
-  -elf clownsec-movie-player.elf \
+./makerom -f cia -o binaries/clownsec-movie-player.cia \
+  -elf binaries/clownsec-movie-player.elf \
   -rsf cia-build/working.rsf \
   -icon cia-build/icon.smdh \
   -banner cia-build/banner.bin \
@@ -52,7 +52,7 @@ This creates `clownsec-movie-player.elf` in the main directory.
   -target t
 ```
 
-The output will be `clownsec-movie-player.cia` in the main directory.
+The output will be `clownsec-movie-player.cia` in the `binaries/` directory.
 
 ## Customizing the Banner
 

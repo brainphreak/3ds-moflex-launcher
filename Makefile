@@ -46,7 +46,7 @@ APP_DESCRIPTION	:=	Clownsec 3DS Moflex Launcher
 APP_AUTHOR	:=	brainphreak
 APP_PRODUCT_CODE	:=	CTR-CLWN
 APP_UNIQUE_ID	:=	0xCE001
-ICON		:=	icon-48x48.png
+ICON		:=	icons/icon-48x48.png
 
 #---------------------------------------------------------------------------------
 # options for code generation

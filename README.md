@@ -20,7 +20,7 @@ A Nintendo 3DS homebrew application that makes it easy to launch moflex video fi
 
 ### Install Instructions
 
-1. Download `clownsec-movie-player.cia` from the [releases](../../releases) page
+1. Download `clownsec-movie-player.cia` from the [releases](../../releases) page or from `binaries/` folder
 2. Copy the CIA file to your 3DS SD card
 3. Install using FBI or any CIA installer
 4. Launch "Clownsec 3DS" from your home menu
@@ -29,7 +29,7 @@ A Nintendo 3DS homebrew application that makes it easy to launch moflex video fi
 
 You can also run the `.3dsx` file directly from the Homebrew Launcher without installing:
 
-1. Download `clownsec-movie-player.3dsx`
+1. Download `clownsec-movie-player.3dsx` from the [releases](../../releases) page or from `binaries/` folder
 2. Copy to `/3ds/` folder on your SD card
 3. Launch from Homebrew Launcher
 
@@ -155,21 +155,26 @@ make
 ### Project Structure
 
 ```
-clownsec-movie-player/
+3ds-moflex-launcher/
 ├── source/
 │   └── main.c                      # Main application source code
+├── icons/
+│   ├── icon.png                    # App icon source (48x48)
+│   ├── icon-48x48.png              # Icon used by build
+│   └── icon.smdh                   # Pre-built SMDH icon
+├── binaries/
+│   ├── clownsec-movie-player.3dsx  # Homebrew Launcher file
+│   ├── clownsec-movie-player.cia   # Installable CIA file
+│   ├── clownsec-movie-player.elf   # Compiled ELF (for CIA building)
+│   └── clownsec-movie-player.smdh  # Generated SMDH
 ├── cia-build/
 │   ├── README.md                   # CIA building instructions
 │   ├── working.rsf                 # Resource specification file
-│   ├── icon.smdh                   # Pre-built icon
+│   ├── icon.smdh                   # Pre-built icon for CIA
 │   ├── banner.bin                  # Pre-built banner
 │   ├── banner.png                  # Banner image source
 │   └── audio_short.wav             # Banner audio source
 ├── Makefile                        # Build configuration
-├── icon.png                        # App icon source (48x48)
-├── clownsec-movie-player.elf       # Compiled ELF (needed for CIA)
-├── clownsec-movie-player.3dsx      # Compiled homebrew file
-├── clownsec-movie-player.cia       # Pre-built CIA (for releases)
 └── README.md                       # This file
 ```
 
