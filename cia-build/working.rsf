@@ -1,0 +1,127 @@
+BasicInfo:
+  Title                   : "Clownsec 3DS"
+  CompanyCode             : "00"
+  ProductCode             : "CTR-N-CLWN"
+  ContentType             : Application
+  Logo                    : Nintendo
+
+TitleInfo:
+  UniqueId                : 0xCE001
+  Category                : Application
+
+Option:
+  UseOnSD                 : true
+  EnableCompress          : true
+  FreeProductCode         : true
+  EnableCrypt             : true
+  MediaFootPadding        : true
+
+AccessControlInfo:
+  CoreVersion             : 2
+  DescVersion             : 2
+
+  MemoryType              : Application
+  SystemMode              : 64MB
+  IdealProcessor          : 0
+  AffinityMask            : 1
+  Priority                : 16
+  MaxCpu                  : 0x9E
+  HandleTableSize         : 512
+
+  DisableDebug            : true
+  EnableForceDebug        : false
+  CanWriteSharedPage      : false
+  CanUsePrivilegedPriority : false
+  CanUseNonAlphabetAndNumber : false
+  PermitMainFunctionArgument : false
+  CanShareDeviceMemory    : false
+  RunnableOnSleep         : false
+  SpecialMemoryArrange    : false
+  ResourceLimitCategory   : Application
+
+  UseExtSaveData          : false
+  ExtSaveDataId           : 0xCE001
+  SystemSaveDataId1       : 0x00000000
+  SystemSaveDataId2       : 0x00000000
+  OtherUserSaveDataId1    : 0x00000
+  OtherUserSaveDataId2    : 0x00000
+  OtherUserSaveDataId3    : 0x00000
+  UseOtherVariationSaveData : false
+
+  SystemCallAccess:
+    ControlMemory: 1
+    QueryMemory: 2
+    ExitProcess: 3
+    CreateThread: 8
+    ExitThread: 9
+    SleepThread: 10
+    GetThreadPriority: 11
+    SetThreadPriority: 12
+    CreateMutex: 19
+    ReleaseMutex: 20
+    CreateSemaphore: 21
+    ReleaseSemaphore: 22
+    CreateEvent: 23
+    SignalEvent: 24
+    ClearEvent: 25
+    CreateTimer: 26
+    SetTimer: 27
+    CancelTimer: 28
+    ClearTimer: 29
+    CreateMemoryBlock: 30
+    MapMemoryBlock: 31
+    UnmapMemoryBlock: 32
+    CreateAddressArbiter: 33
+    ArbitrateAddress: 34
+    CloseHandle: 35
+    WaitSynchronization1: 36
+    WaitSynchronizationN: 37
+    DuplicateHandle: 39
+    GetSystemTick: 40
+    GetHandleInfo: 41
+    GetSystemInfo: 42
+    GetProcessInfo: 43
+    GetThreadInfo: 44
+    ConnectToPort: 45
+    SendSyncRequest: 50
+    OpenProcess: 51
+    GetProcessId: 53
+    GetProcessIdOfThread: 54
+    GetThreadId: 55
+    GetResourceLimit: 56
+    GetResourceLimitLimitValues: 57
+    GetResourceLimitCurrentValues: 58
+    Break: 60
+    OutputDebugString: 61
+    FlushProcessDataCache: 84
+
+  ServiceAccessControl:
+    - APT:U
+    - ac:u
+    - am:net
+    - boss:U
+    - cfg:u
+    - csnd:SND
+    - dsp::DSP
+    - frd:u
+    - fs:USER
+    - gsp::Gpu
+    - hid:USER
+    - http:C
+    - mic:u
+    - ndm:u
+    - news:s
+    - nwm::UDS
+    - ptm:u
+    - soc:U
+    - ssl:C
+
+  FileSystemAccess:
+    - DirectSdmc
+    - DirectSdmcWrite
+
+SystemControlInfo:
+  SaveDataSize            : 0MB
+  RemasterVersion         : 0
+  StackSize               : 0x00040000
+  JumpId                  : 0x0004000000CE0100L
