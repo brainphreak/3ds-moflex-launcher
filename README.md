@@ -256,3 +256,5 @@ Contributions are welcome! Please feel free to submit issues or pull requests.
 - Automatic cleanup of existing root moflex files
 - Custom animated banner with audio
 - Hardware-optimized filesystem operations
+  
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/F2F35TO7X)
