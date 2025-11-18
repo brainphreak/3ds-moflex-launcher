@@ -20,6 +20,18 @@ A Nintendo 3DS homebrew application that makes it easy to launch moflex video fi
 
 ### Install Instructions
 
+#### Method 1: QR Code Install (Easiest)
+
+![QR Code](binaries/qrcode.png)
+
+1. On your 3DS, open **FBI**
+2. Navigate to **Remote Install** → **Scan QR Code**
+3. Scan the QR code above
+4. FBI will download and install the CIA automatically
+5. Launch "Clownsec 3DS" from your home menu
+
+#### Method 2: Manual Install
+
 1. Download `clownsec-movie-player.cia` from the [releases](../../releases) page or from `binaries/` folder
 2. Copy the CIA file to your 3DS SD card
 3. Install using FBI or any CIA installer
@@ -166,7 +178,8 @@ make
 │   ├── clownsec-movie-player.3dsx  # Homebrew Launcher file
 │   ├── clownsec-movie-player.cia   # Installable CIA file
 │   ├── clownsec-movie-player.elf   # Compiled ELF (for CIA building)
-│   └── clownsec-movie-player.smdh  # Generated SMDH
+│   ├── clownsec-movie-player.smdh  # Generated SMDH
+│   └── qrcode.png                  # QR code for FBI remote install
 ├── cia-build/
 │   ├── README.md                   # CIA building instructions
 │   ├── working.rsf                 # Resource specification file
