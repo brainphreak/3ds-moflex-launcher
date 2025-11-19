@@ -1,6 +1,7 @@
 # Clownsec 3DS Moflex Launcher
 
-A Nintendo 3DS homebrew application that makes it easy to launch moflex video files with the 3D Movie Player application.
+A Nintendo 3DS homebrew application that makes it easy to launch moflex video files with the 3D Movie Player application. 
+Bypasses the 3DS 127 movie limit and allows you to sort your movies and tv shows in their own directories for better organization. 
 
 ## Features
 
